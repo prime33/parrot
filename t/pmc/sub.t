@@ -1626,7 +1626,7 @@ PIR
     say "got compiler"
     $P1 = $P0($S0)
     $P2 = $P1.'single_sub_by_tag'('init')
-    $P2()    
+    $P2()
     say "compiled"
     $P1 = $P1.'main_sub'()
     $P1()

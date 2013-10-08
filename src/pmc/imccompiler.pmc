@@ -1,5 +1,5 @@
 /*
-Copyright (C) 2011-2012, Parrot Foundation.
+Copyright (C) 2011-2013, Parrot Foundation.
 
 =head1 NAME
 
@@ -18,23 +18,6 @@ A compiler object to wrap IMCC
 #include "imcc/embed.h"
 #include "imcc/yyscanner.h"
 #include "pmc/pmc_sub.h"
-
-/* HEADERIZER BEGIN: static */
-/* Don't modify between HEADERIZER BEGIN / HEADERIZER END.  Your changes will be lost. */
-
-PARROT_CANNOT_RETURN_NULL
-PARROT_WARN_UNUSED_RESULT
-static PMC * get_packfile_eval_pmc(PARROT_INTERP,
-    ARGIN(PMC *pf_pmc),
-    INTVAL current_eval)
-        __attribute__nonnull__(1)
-        __attribute__nonnull__(2);
-
-#define ASSERT_ARGS_get_packfile_eval_pmc __attribute__unused__ int _ASSERT_ARGS_CHECK = (\
-       PARROT_ASSERT_ARG(interp) \
-    , PARROT_ASSERT_ARG(pf_pmc))
-/* Don't modify between HEADERIZER BEGIN / HEADERIZER END.  Your changes will be lost. */
-/* HEADERIZER END: static */
 
 #define BEGIN_IMCC_COMPILE(i) \
     do { \
